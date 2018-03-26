@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			img{
+				width: 295px;
+				height: 295px;
+			}
+			html,body{
+				height: 100%;
+			}
+			body{
+				background-color: #050618;
+				overflow: hidden;
+			}
+			li{
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				border-radius: 50%;
+				transform: translate(-50%,-50%);
+				animation: run 10s infinite linear;
+			}
+			li:nth-child(1){
+				width: 60px;
+				height: 60px;
+				background-color: #FCD35A;
+				
+
+				box-shadow: 0 0 20px #FCD35A;
+
+			}
+			li:nth-child(2){
+				width: 120px;
+				height: 120px;
+				border: solid 1px #353B52;
+
+				animation-duration: 11s;
+				
+			}
+			li:nth-child(2)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: #FFFF00;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			li:nth-child(3){
+				width: 180px;
+				height: 180px;
+				border: solid 1px #353B52;
+				animation-duration: 12s;
+				
+			}
+			li:nth-child(3)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: #0000FF;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			li:nth-child(4){
+				width: 240px;
+				height: 240px;
+				border: solid 1px #353B52;
+				animation-duration: 13s;
+			}
+			li:nth-child(4)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: #008000;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			li:nth-child(4)::after{
+				content: "";
+				position: absolute;
+				width: 6px;
+				height: 6px;
+				background-color: #FFFF00;
+				border-radius: 50%;
+				top: 50%;
+				left: -18px;
+				margin-top: -3px;
+				transform-origin: 21px 5px;
+				animation: run 2s infinite linear;
+			}
+			li:nth-child(5){
+				width: 300px;
+				height: 300px;
+				border: solid 1px #353B52;
+				animation-duration: 14s;
+			
+			}
+			li:nth-child(5)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: #FF0000;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			li:nth-child(6){
+				width: 360px;
+				height: 360px;
+				border: solid 1px #353B52;
+				animation-duration: 15s;
+				
+			}
+			li:nth-child(6)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: #CCCCCC;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			li:nth-child(7){
+				width: 420px;
+				height: 420px;
+				border: solid 1px #353B52;
+				animation-duration: 16s;
+				
+			}
+			li:nth-child(7)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: #008000;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			li:nth-child(7)::after{
+				content: "";
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				border: solid 2px #ccc;
+				border-radius: 50%;
+				top: 50%;
+				left: -12px;
+				margin-top: -12px;
+				transform: skewY(45deg);
+			}
+			li:nth-child(8){
+				width: 480px;
+				height: 480px;
+				border: solid 1px #353B52;
+				animation-duration: 17s;
+		
+				
+			}
+			li:nth-child(8)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: pink;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			li:nth-child(9){
+				width: 540px;
+				height: 540px;
+				border: solid 1px #353B52;
+				animation-duration: 18s;
+				
+				
+			}
+			li:nth-child(9)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: blue;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			li:nth-child(10){
+				width: 600px;
+				height: 600px;
+				border: solid 1px #353B52;
+				animation-duration: 19s;
+			
+				
+			}
+			li:nth-child(10)::before{
+				content: "";
+				position: absolute;
+				width: 12px;
+				height: 12px;
+				background-color: blueviolet;
+				top: 50%;
+				left: -6px;
+				margin-top: -6px;
+				border-radius: 50%;
+			}
+			@keyframes run{
+				0%{
+					transform: translate(-50%, -50%) rotate(0deg);
+				}
+				100%{
+					transform: translate(-50%, -50%) rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li><img src="images/asteroids_meteorids.png"/></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+		</ul>
+	</body>
+</html>
